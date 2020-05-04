@@ -66,7 +66,7 @@ def return_figures(countries = country_default):
 
     layout_one = dict(title = 'COVID-19 Total Cases Trends from 2019-12-31',
                 xaxis = dict(title = 'Date',
-                  autotick=False, tick0=date_min),
+                  autotick=False, tick0=date_min, dtick=10),
                 yaxis = dict(title = 'Total Cases'),
                 )
 
@@ -87,7 +87,7 @@ def return_figures(countries = country_default):
 
     layout_two = dict(title = 'COVID-19 New Cases Trends from 2019-12-31',
                 xaxis = dict(title = 'Date',
-                  autotick=False, tick0=date_min),
+                  autotick=False, tick0=date_min, dtick=10),
                 yaxis = dict(title = 'New Cases'),
                 )
 
@@ -108,7 +108,7 @@ def return_figures(countries = country_default):
 
     layout_three = dict(title = 'COVID-19 Total Deaths Trends from 2019-12-31',
                 xaxis = dict(title = 'Date',
-                  autotick=False, tick0=date_min),
+                  autotick=False, tick0=date_min, dtick=10),
                 yaxis = dict(title = 'Total Deaths'),
                 )
 
@@ -129,7 +129,7 @@ def return_figures(countries = country_default):
 
     layout_four = dict(title = 'COVID-19 Total Tests Trends from 2019-12-31',
                 xaxis = dict(title = 'Date',
-                  autotick=False, tick0=date_min),
+                  autotick=False, tick0=date_min, dtick=10),
                 yaxis = dict(title = 'Total Tests'),
                 )
 
