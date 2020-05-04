@@ -53,8 +53,8 @@ def return_figures(countries = country_default):
     graph_one = []
 
     for country in countries:
-        x_val = df_one[df_one['location'] == country].date.tolist()
-        y_val =  df_one[df_one['location'] == country].total_cases.tolist()
+        x_val = df[df['location'] == country].date.tolist()
+        y_val =  df[df['location'] == country].total_cases.tolist()
         graph_one.append(
           go.Scatter(
           x = x_val,
@@ -74,8 +74,8 @@ def return_figures(countries = country_default):
     graph_two = []
 
     for country in countries:
-        x_val = df_one[df_one['location'] == country].date.tolist()
-        y_val =  df_one[df_one['location'] == country].new_cases.tolist()
+        x_val = df[df['location'] == country].date.tolist()
+        y_val =  df[df['location'] == country].new_cases.tolist()
         graph_two.append(
           go.Scatter(
           x = x_val,
