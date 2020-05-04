@@ -13,7 +13,6 @@ def return_figures(countries = country_default):
     """Creates four plotly visualizations using
         # Coronavirus Disease (COVID-19) – Statistics and Research API
         # Source: https://ourworldindata.org/coronavirus
-        # arable land for the United States and Brazil from 1990 to 2016
         # https://api.namara.io/v0/data_sets/{DATA_SET_ID}/data/{VERSION}?api_key={YOUR_API_KEY}&query_parameters={VALUE}
         Args:
             country_default (list): list of countries for filtering the data
@@ -66,7 +65,7 @@ def return_figures(countries = country_default):
 
     layout_one = dict(title = 'COVID-19 Total Cases Trends from 2019-12-31',
                 xaxis = dict(title = 'Date',
-                  autotick=False, tick0=date_min, dtick=10),
+                  autotick=False, tick0=date_min, dtick=10*86400000),
                 yaxis = dict(title = 'Total Cases'),
                 )
 
@@ -87,7 +86,7 @@ def return_figures(countries = country_default):
 
     layout_two = dict(title = 'COVID-19 New Cases Trends from 2019-12-31',
                 xaxis = dict(title = 'Date',
-                  autotick=False, tick0=date_min, dtick=10),
+                  autotick=False, tick0=date_min, dtick=10*86400000),
                 yaxis = dict(title = 'New Cases'),
                 )
 
@@ -108,7 +107,7 @@ def return_figures(countries = country_default):
 
     layout_three = dict(title = 'COVID-19 Total Deaths Trends from 2019-12-31',
                 xaxis = dict(title = 'Date',
-                  autotick=False, tick0=date_min, dtick=10),
+                  autotick=False, tick0=date_min, dtick=10*86400000),
                 yaxis = dict(title = 'Total Deaths'),
                 )
 
@@ -129,7 +128,7 @@ def return_figures(countries = country_default):
 
     layout_four = dict(title = 'COVID-19 Total Tests Trends from 2019-12-31',
                 xaxis = dict(title = 'Date',
-                  autotick=False, tick0=date_min, dtick=10),
+                  autotick=False, tick0=date_min, dtick=10*86400000),
                 yaxis = dict(title = 'Total Tests'),
                 )
 
